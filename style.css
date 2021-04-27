@@ -1,0 +1,45 @@
+body{
+  background-image: url("img.jpg");
+  background-size: cover;
+}
+
+.background{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.keys{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98vw;
+}
+
+ .key{
+  border: .4rem solid white;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all 0.5s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+.pressed{
+border: 0.4rem solid orange;
+transition: all 0.01s ease;
+transform: scale(1.1);
+}
+.key:hover{
+  border: 0.4rem solid blue;
+  transition: all 0.05s ease;
+  transform: scale(1.1);
+}
